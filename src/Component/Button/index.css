@@ -1,0 +1,25 @@
+.button {
+  padding: 0.8rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 25% !important;
+  margin: 2rem 0 !important;
+}
+
+.button-main {
+  background-color: var(--btn-color);
+  color: var(--white);
+  border-radius: 2rem;
+  font-family: var(--font);
+  border: 2px solid var(--white);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.button-main:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+}
