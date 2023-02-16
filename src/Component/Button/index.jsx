@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 const Button = (props) => {
-  return <Link className="button button-main">{props.name}</Link>;
+  return (
+    <Link className="button button-main">
+      {props.name}
+      {props.card}
+    </Link>
+  );
 };
 
 export default Button;
