@@ -2,18 +2,12 @@ import React from "react";
 
 import "./index.css";
 
-// const CardImages = [
-//   {
-//     img: "FaPalette",
-//   },
-// ];
-
 const Card = (props) => {
   const {
-    image1,
-    image2,
-    image3,
-    image4,
+    icon1,
+    icon2,
+    icon3,
+    icon4,
     name1,
     name2,
     name3,
@@ -27,10 +21,10 @@ const Card = (props) => {
     <div className="card-wrapper">
       <div className="card_images">
         <span className="card_images_icon">
-          {image1}
-          {image2}
-          {image3}
-          {image4}
+          {icon1}
+          {icon2}
+          {icon3}
+          {icon4}
         </span>
       </div>
       <div className="card_box">

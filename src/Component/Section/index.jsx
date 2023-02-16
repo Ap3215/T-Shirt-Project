@@ -15,26 +15,26 @@ const Section = () => {
     <section className="section">
       <div className="container">
         <div className="row justify-content-center">
-          <FeatureHeading title="our feature" />
+          <FeatureHeading feature={"our feature"} />
           <Card
             name1="unique design"
             date1="05 feb 2023"
-            image1={<FaPalette />}
+            icon1={<FaPalette />}
           />
           <Card
             name2="quality material"
             date2="10 feb 2023"
-            image2={<FiLayers />}
+            icon2={<FiLayers />}
           />
           <Card
             name3="good review"
             date3="13 feb 2023"
-            image3={<CiFaceSmile />}
+            icon3={<CiFaceSmile />}
           />
           <Card
             name4="high print qulity"
             date4="16 feb 2023"
-            image4={<GiLifeJacket />}
+            icon4={<GiLifeJacket />}
           />
         </div>
       </div>
