@@ -6,6 +6,7 @@ import IconButton from "../IconButton";
 import Heading from "../HeroHeading";
 import Button from "../Button";
 import SocialHandler from "../SocialHandler";
+import Section from "../Section";
 
 import "./index.css";
 
@@ -14,13 +15,13 @@ const Header = () => {
     <>
       <header className="header">
         <Logo to="/" logoName="ToolM5" />
-        <nav>
+        <nav className="main-nav">
           <ul className="main-nav-list">
             <HeaderLinks />
           </ul>
+          <SocialHandler />
+          <IconButton name="Get Started" />
         </nav>
-        <SocialHandler />
-        <IconButton name="Get Started" />
       </header>
       <section className="hero-section">
         <div className="container">
@@ -37,6 +38,7 @@ const Header = () => {
           </div>
         </div>
       </section>
+      <Section />
     </>
   );
 };

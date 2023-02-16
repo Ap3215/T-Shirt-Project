@@ -5,9 +5,6 @@ import "./index.css";
 
 const links = [
   {
-    to: "/",
-  },
-  {
     to: "/about_us",
     title: "About us",
   },

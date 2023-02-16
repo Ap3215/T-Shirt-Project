@@ -12,6 +12,13 @@
 /* img {
   height: 2.2rem;
 } */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 3.2rem;
+  padding: 0 1rem;
+}
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -29,7 +36,8 @@
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 130rem !important;
+  padding: 0 4.2rem !important;
 }
 .row {
   display: flex !important;
@@ -40,9 +48,9 @@
 }
 .row-bg {
   align-items: center;
-  background: var(--hero);
-  padding: 8rem 3rem;
-  border-radius: 2rem;
+  background: var(--primary-green);
+  padding: 8rem 3rem !important;
+  border-radius: 2rem !important;
   margin: 0;
 }
 .heading-underline {

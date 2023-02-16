@@ -1,0 +1,19 @@
+.section {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  background-color: var(--primary);
+}
+
+.container {
+  max-width: 130rem !important;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex !important;
+  padding: 0 2rem !important ;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
