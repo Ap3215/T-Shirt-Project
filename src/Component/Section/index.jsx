@@ -1,18 +1,14 @@
 import React from "react";
 
-import FeatureHeading from "../FeatureHeading";
-
 import "./index.css";
 
 const Section = (props) => {
-  const { children, color } = props;
-  console.log(props);
+  const { children, color, width } = props;
 
   return (
     <section className="section">
-      <div className="container">
-        <div className={`row row__${color}`}>
-          <FeatureHeading feature="our feature" />
+      <div className={`container__${width}`}>
+        <div className={`row justify-content-center row__${color}`}>
           {children}
         </div>
       </div>

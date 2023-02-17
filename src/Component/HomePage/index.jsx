@@ -4,6 +4,8 @@ import HeroSection from "../HeroSection";
 import Section from "../Section";
 import Card from "../Card";
 import WorksCard from "../WorksCards";
+import FeatureHeading from "../FeatureHeading";
+import About from "../About";
 
 import { FiLayers } from "react-icons/fi";
 import { CiFaceSmile } from "react-icons/ci";
@@ -39,7 +41,12 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <Section color="gray">
+      <Section color="primary" width="all">
+        <FeatureHeading
+          feature="our feature"
+          heading="black"
+          font="smallfont"
+        />
         {CardItems.map((item, index) => (
           <Card
             key={index}
@@ -50,9 +57,18 @@ const HomePage = () => {
         ))}
       </Section>
 
-      <Section color="black">
+      <Section color="black" width="all">
+        <FeatureHeading
+          feature="How it works?"
+          heading="white"
+          font="bigfont"
+        />
         <WorksCard />
       </Section>
+      <Section color="primary" width="about">
+        <About />
+      </Section>
+      <Section color="primary" width="all"></Section>
     </>
   );
 };

@@ -4,17 +4,23 @@
   background-color: var(--primary);
 }
 
-.container {
+.container__all {
   max-width: 130rem !important;
   padding: 0 4rem;
   margin: 0 auto;
+}
+
+.container__about {
+  max-width: 90rem !important;
+  margin: 0 6rem;
+  padding: 0 6rem !important;
 }
 
 .row {
   display: flex !important;
   padding: 0 2rem;
 }
-.row__gray {
+.row__primary {
   background-color: var(--primary);
 }
 .row__black {
