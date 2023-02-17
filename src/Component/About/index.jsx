@@ -1,5 +1,4 @@
 import React from "react";
-import AboutText from "../AboutText";
 
 import "./index.css";
 
@@ -8,7 +7,12 @@ const About = () => {
     <>
       <div className="about">
         <h4 className="about_heading">About us</h4>
-        <AboutText />
+        <p className="about_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet minima
+          quis odit a quia libero ex et dolor exercitationem quae expedita
+          deleniti perspiciatis autem, animi, dicta quisquam officia tempore
+          excepturi.
+        </p>
       </div>
     </>
   );

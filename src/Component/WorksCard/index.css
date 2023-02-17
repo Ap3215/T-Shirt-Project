@@ -1,0 +1,35 @@
+.works-card {
+  background-color: var(--white);
+}
+.works-card_two {
+  border-radius: 2rem 1rem;
+}
+
+.works-card_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.works-card-header {
+  margin: 1rem 1rem;
+  color: var(--black2);
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-family: var(--font);
+  text-align: left;
+}
+.works-card-border {
+  border-bottom: 1px solid var(--black) !important;
+}
+
+.works-card_text {
+  padding: 1rem 2rem;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 2rem;
+  font-family: var(--font);
+  font-weight: 400;
+}
