@@ -14,6 +14,13 @@
   display: flex !important;
   padding: 0 2rem;
 }
+.row__gray {
+  background-color: var(--primary);
+}
+.row__black {
+  background-color: var(--black);
+  border-radius: 2rem !important;
+}
 .justify-content-center {
   justify-content: center !important;
 }

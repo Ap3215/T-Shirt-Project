@@ -14,7 +14,7 @@ const HeroSection = () => {
             first_heading="T-Shirt Design"
             second_heading="Create your"
           />
-          <Button name="Get Started" />
+          <Button name="Get Started" buttonWidth="hero_page" />
           <h4 className="heading-underline">view how it works</h4>
           <p className="p-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

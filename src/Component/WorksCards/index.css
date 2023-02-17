@@ -1,0 +1,58 @@
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+}
+.Card {
+  background-color: var(--white);
+}
+.Card_one,
+.Card_two {
+  border-radius: 2rem 1rem;
+}
+.Card_picture {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 4rem;
+}
+
+.Card_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.Card .Card-title {
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--black);
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.Card-header {
+  margin: 1rem 1rem;
+  color: var(--black2);
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-family: var(--font);
+  text-align: left;
+}
+.Card-border {
+  border-bottom: 1px solid var(--black) !important;
+}
+
+.Card_text {
+  padding: 1rem 2rem;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  font-family: var(--font);
+  font-weight: 400;
+}

@@ -5,12 +5,14 @@ import FeatureHeading from "../FeatureHeading";
 import "./index.css";
 
 const Section = (props) => {
-  const { children } = props;
+  const { children, color } = props;
+  console.log(props);
+
   return (
     <section className="section">
       <div className="container">
-        <div className="row justify-content-center">
-          <FeatureHeading feature={"our feature"} />
+        <div className={`row row__${color}`}>
+          <FeatureHeading feature="our feature" />
           {children}
         </div>
       </div>

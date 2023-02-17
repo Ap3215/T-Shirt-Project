@@ -3,6 +3,7 @@ import React from "react";
 import HeroSection from "../HeroSection";
 import Section from "../Section";
 import Card from "../Card";
+import WorksCard from "../WorksCards";
 
 import { FiLayers } from "react-icons/fi";
 import { CiFaceSmile } from "react-icons/ci";
@@ -38,7 +39,7 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <Section>
+      <Section color="gray">
         {CardItems.map((item, index) => (
           <Card
             key={index}
@@ -47,6 +48,10 @@ const HomePage = () => {
             date={item.date}
           />
         ))}
+      </Section>
+
+      <Section color="black">
+        <WorksCard />
       </Section>
     </>
   );
