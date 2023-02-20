@@ -4,18 +4,32 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  width: 25% !important;
   margin: 2rem 0 !important;
 }
 
+.button__card {
+  width: 30% !important;
+  color: var(--black2) !important;
+  background-color: var(--white) !important;
+  border: 2px solid var(--black) !important;
+}
+.button__card:hover {
+  background-color: var(--primary-green) !important;
+}
+
+.button__hero_page {
+  width: 15% !important;
+}
+
 .button-main {
-  background-color: var(--btn-color);
+  background-color: var(--black2);
   color: var(--white);
   border-radius: 2rem;
   font-family: var(--font);
   border: 2px solid var(--white);
-  font-weight: 600;
-  font-size: 1.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 .button-main:hover {

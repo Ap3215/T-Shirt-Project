@@ -5,9 +5,6 @@ import "./index.css";
 
 const links = [
   {
-    to: "/",
-  },
-  {
     to: "/about_us",
     title: "About us",
   },
@@ -23,13 +20,15 @@ const links = [
 
 const HeaderLinks = () => {
   return (
-    <li>
-      {links.map((link) => (
-        <Link className="list_link" to={link.to}>
-          {link.title}
-        </Link>
+    <ul className="main-nav-list">
+      {links.map((link, index) => (
+        <li key={index}>
+          <Link className="list_link" to={link.to}>
+            {link.title}
+          </Link>
+        </li>
       ))}
-    </li>
+    </ul>
   );
 };
 

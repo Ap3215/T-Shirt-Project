@@ -1,0 +1,23 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3.2rem;
+}
+.about_heading {
+  font-size: 2.2rem;
+  font-family: var(--font);
+  color: var(--black2);
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.about_text {
+  font-size: 1.4rem;
+  font-family: var(--font);
+  text-align: left;
+  border-left: 1px solid var(--gray);
+  color: var(--gray2);
+  padding-left: 1rem;
+}

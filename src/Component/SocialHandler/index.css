@@ -1,0 +1,10 @@
+.socialhandler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.socialhandler-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

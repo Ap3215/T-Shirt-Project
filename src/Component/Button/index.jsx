@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 const Button = (props) => {
-  return <Link className="button button-main">{props.name}</Link>;
+  const { name, card, buttonWidth } = props;
+  return (
+    <Link className={`button button-main button__${buttonWidth}  `}>
+      {name}
+      {card}
+    </Link>
+  );
 };
 
 export default Button;

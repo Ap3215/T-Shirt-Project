@@ -1,0 +1,32 @@
+.section {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  background-color: var(--primary);
+}
+
+.container__all {
+  max-width: 130rem !important;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+.container__about {
+  max-width: 90rem !important;
+  margin: 0 6rem;
+  padding: 0 6rem !important;
+}
+
+.row {
+  display: flex !important;
+  padding: 0 2rem;
+}
+.row__primary {
+  background-color: var(--primary);
+}
+.row__black {
+  background-color: var(--black);
+  border-radius: 2rem !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}

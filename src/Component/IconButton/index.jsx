@@ -9,6 +9,7 @@ const IconButton = (props) => {
   return (
     <Link className="icon_button icon_button-main">
       {props.name}
+      {props.card}
       <span>
         <FaAngleRight className="icons" />
       </span>

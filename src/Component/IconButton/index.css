@@ -1,5 +1,5 @@
 .icon_button {
-  padding: 0.6rem 1.2rem;
+  padding: 0.4rem 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7,12 +7,13 @@
 }
 
 .icon_button-main {
-  background-color: var(--hero);
+  background-color: var(--primary-green);
   color: var(--black);
   border-radius: 2rem;
   font-family: var(--font);
   border: 2px solid var(--black);
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .icon_button-main:hover,
