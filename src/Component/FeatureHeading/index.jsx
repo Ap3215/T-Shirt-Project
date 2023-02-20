@@ -2,12 +2,10 @@ import React from "react";
 
 import "./index.css";
 
-const FeatureHeading = (props) => {
-  const { feature, heading, font } = props;
-  console.log(heading);
+const FeatureHeading = ({ feature, heading, font, border }) => {
   return (
     <h4
-      className={`feature_heading feature_border feature__${font}  title__${heading} `}
+      className={`feature_heading feature_${border} feature__${font}  title__${heading} `}
     >
       {feature}
     </h4>

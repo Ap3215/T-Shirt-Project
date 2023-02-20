@@ -2,9 +2,7 @@ import React from "react";
 
 import "./index.css";
 
-const Section = (props) => {
-  const { children, color, width } = props;
-
+const Section = ({ children, color, width }) => {
   return (
     <section className="section">
       <div className={`container__${width}`}>

@@ -2,8 +2,7 @@ import React from "react";
 
 import "./index.css";
 
-const HeroHeading = (props) => {
-  const { first_heading, second_heading } = props;
+const HeroHeading = ({ first_heading, second_heading }) => {
   return (
     <div className="heading">
       <h3 className="heading-medium">{second_heading}</h3>

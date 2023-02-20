@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./index.css";
 
-const Button = (props) => {
-  const { name, card, buttonWidth } = props;
+const Button = ({ name, card, buttonWidth }) => {
   return (
     <Link className={`button button-main button__${buttonWidth}  `}>
       {name}
