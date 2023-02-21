@@ -23,6 +23,13 @@
 .row__primary {
   background-color: var(--primary);
 }
+.row__lightgray {
+  background-color: var(--lightgray);
+  border-radius: 2rem !important;
+}
+.row__green {
+  background-color: var(--primary-green);
+}
 .row__black {
   background-color: var(--black);
   border-radius: 2rem !important;

@@ -5,11 +5,11 @@ import { FaAngleRight } from "react-icons/fa";
 
 import "./index.css";
 
-const IconButton = (props) => {
+const IconButton = ({ name, card }) => {
   return (
     <Link className="icon_button icon_button-main">
-      {props.name}
-      {props.card}
+      {name}
+      {card}
       <span>
         <FaAngleRight className="icons" />
       </span>

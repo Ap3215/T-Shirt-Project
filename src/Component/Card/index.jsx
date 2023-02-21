@@ -2,8 +2,7 @@ import React from "react";
 
 import "./index.css";
 
-const Card = (props) => {
-  const { icon, name, date } = props;
+const Card = ({ icon, name, date }) => {
   return (
     <div className="card-wrapper">
       <div className="card_images">
