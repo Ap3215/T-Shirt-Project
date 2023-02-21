@@ -3,7 +3,6 @@
   font-family: var(--font);
   font-weight: 600;
   text-transform: capitalize;
-  margin-bottom: 3.2rem;
 }
 .feature_bordertop {
   border-top: 1px solid var(--gray);
@@ -11,6 +10,14 @@
 .feature_bordernon {
   border-top: none;
 }
+
+.feature__marginbottom {
+  margin-bottom: 3.2rem;
+}
+.fearture_marginnon {
+  margin-bottom: none;
+}
+
 .title__white {
   color: var(--white);
 }
@@ -24,4 +31,10 @@
 
 .feature__smallfont {
   font-size: 1.4rem;
+}
+.feature__biggerfont {
+  font-size: 4.4rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--font);
 }

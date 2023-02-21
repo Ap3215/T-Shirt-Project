@@ -1,5 +1,10 @@
 import React from "react";
 
+import { FiLayers } from "react-icons/fi";
+import { CiFaceSmile } from "react-icons/ci";
+import { GiLifeJacket } from "react-icons/gi";
+import { FaPalette } from "react-icons/fa";
+
 import HeroSection from "../HeroSection";
 import Section from "../Section";
 import Card from "../Card";
@@ -8,12 +13,9 @@ import FeatureHeading from "../FeatureHeading";
 import About from "../About";
 import ProfessionalCards from "../ProfessionalCards";
 import ShopCards from "../ShopCards";
+import TeamCard from "../TeamCard";
+import Action from "../Action";
 import OurPartner from "../OurPartner";
-
-import { FiLayers } from "react-icons/fi";
-import { CiFaceSmile } from "react-icons/ci";
-import { GiLifeJacket } from "react-icons/gi";
-import { FaPalette } from "react-icons/fa";
 
 import "./index.css";
 
@@ -82,12 +84,13 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <Section color="primary" width="all">
+      <Section background="primary" color="primary" width="all">
         <FeatureHeading
           feature="our feature"
           heading="black"
           font="smallfont"
           border="bordertop"
+          margin="marginbottom"
         />
         {CardItems.map((item, index) => (
           <Card
@@ -99,25 +102,28 @@ const HomePage = () => {
         ))}
       </Section>
 
-      <Section color="black" width="all">
+      <Section background="primary" color="black" width="all">
         <FeatureHeading
           feature="How it works?"
           heading="white"
           font="bigfont"
           border="bordernon"
+          margin="marginbottom"
         />
         <WorksCard />
       </Section>
-      <Section color="primary" width="about">
+
+      <Section background="primary" color="primary" width="about">
         <About heading="about us" display="grid" text="about" />
       </Section>
 
-      <Section color="primary" width="all">
+      <Section background="primary" color="primary" width="all">
         <FeatureHeading
           feature="Professional Tools"
           heading="black"
           font="bigfont"
           border="bordernon"
+          margin="marginbottom"
         />
         {ProfessionalCardItems.map((card, index) => (
           <ProfessionalCards
@@ -130,7 +136,7 @@ const HomePage = () => {
         ))}
       </Section>
 
-      <Section color="primary" width="about">
+      <Section background="primary" color="primary" width="about">
         <About heading="our shop" display="flex" text="ourshop" />
       </Section>
 
@@ -144,6 +150,29 @@ const HomePage = () => {
             price={shop.price}
           />
         ))}
+      </Section>
+
+      <Section width="all">
+        <FeatureHeading
+          feature="Our Team"
+          heading="black"
+          font="bigfont"
+          border="bordernon"
+          margin="marginnon"
+        />
+        <p className="teams">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <TeamCard />
+      </Section>
+      <Section background="green">
+        <FeatureHeading
+          feature="View in Action"
+          heading="white"
+          font="biggerfont"
+          border="bordernon"
+        />
+        <Action />
       </Section>
       <Section width="all">
         <OurPartner />
