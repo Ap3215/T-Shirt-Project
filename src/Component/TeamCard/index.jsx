@@ -1,9 +1,10 @@
 import React from "react";
+
 import IconButton from "../IconButton";
 
 import classes from "./index.module.css";
 
-const TeamCards = [
+const teamCards = [
   {
     image: "Images/team1.jpg",
     name: "jessica swift",
@@ -27,15 +28,15 @@ const TeamCards = [
 const TeamCard = () => {
   return (
     <>
-      {TeamCards.map((card) => (
-        <div className={`${classes["card"]}`}>
+      {teamCards.map((card, index) => (
+        <div key={index} className={`${classes["card"]}`}>
           <img
             className={classes["card__image"]}
             src={card.image}
             alt="Girl sitting in office and hold cup of coffie"
           />
 
-          <div className={classes.card__content}>
+          <div className={classes["card__content"]}>
             <h4 className={classes["card__content--title"]}>{card.name}</h4>
             <h5 className={classes["card__content--post"]}>{card.post}</h5>
             <p className={classes["card__content--des"]}>{card.description}</p>
