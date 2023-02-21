@@ -17,16 +17,23 @@
   background-color: var(--primary-green) !important;
 }
 
+.button__green {
+  background-color: var(--primary-green);
+  border: 2px solid var(--black);
+  color: var(--black2);
+}
 .button__hero_page {
   width: 15% !important;
 }
-
-.button-main {
+.button__black {
   background-color: var(--black2);
   color: var(--white);
+  border: 2px solid var(--white);
+}
+.button-main {
   border-radius: 2rem;
   font-family: var(--font);
-  border: 2px solid var(--white);
+
   font-weight: 500;
   font-size: 1.2rem;
   text-transform: capitalize;

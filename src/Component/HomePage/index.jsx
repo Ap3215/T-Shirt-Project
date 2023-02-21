@@ -8,6 +8,7 @@ import FeatureHeading from "../FeatureHeading";
 import About from "../About";
 import ProfessionalCards from "../ProfessionalCards";
 import ShopCards from "../ShopCards";
+import OurPartner from "../OurPartner";
 
 import { FiLayers } from "react-icons/fi";
 import { CiFaceSmile } from "react-icons/ci";
@@ -143,6 +144,9 @@ const HomePage = () => {
             price={shop.price}
           />
         ))}
+      </Section>
+      <Section width="all">
+        <OurPartner />
       </Section>
     </>
   );
