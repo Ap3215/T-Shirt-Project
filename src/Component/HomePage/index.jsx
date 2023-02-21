@@ -1,5 +1,10 @@
 import React from "react";
 
+import { FiLayers } from "react-icons/fi";
+import { CiFaceSmile } from "react-icons/ci";
+import { GiLifeJacket } from "react-icons/gi";
+import { FaPalette } from "react-icons/fa";
+
 import HeroSection from "../HeroSection";
 import Section from "../Section";
 import Card from "../Card";
@@ -8,11 +13,7 @@ import FeatureHeading from "../FeatureHeading";
 import About from "../About";
 import ProfessionalCards from "../ProfessionalCards";
 import ShopCards from "../ShopCards";
-
-import { FiLayers } from "react-icons/fi";
-import { CiFaceSmile } from "react-icons/ci";
-import { GiLifeJacket } from "react-icons/gi";
-import { FaPalette } from "react-icons/fa";
+import TeamCard from "../TeamCard";
 
 import "./index.css";
 
@@ -87,6 +88,7 @@ const HomePage = () => {
           heading="black"
           font="smallfont"
           border="bordertop"
+          margin="marginbottom"
         />
         {CardItems.map((item, index) => (
           <Card
@@ -104,6 +106,7 @@ const HomePage = () => {
           heading="white"
           font="bigfont"
           border="bordernon"
+          margin="marginbottom"
         />
         <WorksCard />
       </Section>
@@ -117,6 +120,7 @@ const HomePage = () => {
           heading="black"
           font="bigfont"
           border="bordernon"
+          margin="marginbottom"
         />
         {ProfessionalCardItems.map((card, index) => (
           <ProfessionalCards
@@ -143,6 +147,20 @@ const HomePage = () => {
             price={shop.price}
           />
         ))}
+      </Section>
+
+      <Section width="all">
+        <FeatureHeading
+          feature="Our Team"
+          heading="black"
+          font="bigfont"
+          border="bordernon"
+          margin="marginnon"
+        />
+        <p className="teams">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <TeamCard />
       </Section>
     </>
   );
