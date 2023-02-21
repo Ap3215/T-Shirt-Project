@@ -10,7 +10,7 @@ import "./index.css";
 const Header = () => {
   return (
     <header className="header">
-      <Logo to="/" logoName="ToolM5" />
+      <Logo to="/" logo="ToolM5" />
       <nav className="main-nav">
         <ul className="main-nav-list">
           <HeaderLinks />

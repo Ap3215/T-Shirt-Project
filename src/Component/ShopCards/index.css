@@ -1,4 +1,4 @@
-.shop_card {
+.shop-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
@@ -8,17 +8,17 @@
   border-radius: 2rem;
   overflow: hidden;
 }
-.shop_image {
+.shop-card__image {
   width: 100%;
 }
-.shop_content {
+.shop-card__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
 
-.shop_title {
+.shop-card__title {
   font-size: 2.2rem;
   font-family: var(--font);
   font-weight: 400;
@@ -26,20 +26,20 @@
   text-transform: capitalize;
   padding: 0 3rem;
 }
-.shop_text {
+.shop-card__text {
   font-size: 1.4rem;
   color: var(--gray2);
   font-family: var(--font);
   padding: 0 3rem;
 }
-.shop_button {
+.shop-card__button {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin: 0 4rem;
 }
-.button_price {
+.button__price {
   font-size: 4rem;
   color: var(--black2);
   font-weight: 500;

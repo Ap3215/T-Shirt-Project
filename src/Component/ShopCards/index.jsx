@@ -6,15 +6,19 @@ import "./index.css";
 
 const ShopCards = ({ image, title, description, price }) => {
   return (
-    <div className="shop_card">
-      <img className="shop_image" src={image} alt="guys standing in pose" />
-      <div className="shop_content">
-        <div className="content_box">
-          <h4 className="shop_title">{title}</h4>
-          <p className="shop_text">{description}</p>
+    <div className="shop-card">
+      <img
+        className="shop-card__image"
+        src={image}
+        alt="guys standing in pose"
+      />
+      <div className="shop-card__content">
+        <div className="shop-card__content_box">
+          <h4 className="shop-card__title">{title}</h4>
+          <p className="shop-card__text">{description}</p>
         </div>
-        <div className="shop_button">
-          <p className="button_price">{price}</p>
+        <div className="shop-card__button">
+          <p className="button__price">{price}</p>
           <IconButton card="buy now" />
         </div>
       </div>

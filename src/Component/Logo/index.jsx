@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./index.css";
 
-const Logo = (logoName) => {
-  // console.log(props);
-  return <Link className="logo">{logoName}</Link>;
+const Logo = ({ logo }) => {
+  return <Link className="logo">{logo}</Link>;
 };
 
 export default Logo;
