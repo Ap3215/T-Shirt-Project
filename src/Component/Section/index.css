@@ -1,9 +1,14 @@
 .section {
   padding-top: 6rem;
   padding-bottom: 5rem;
-  background-color: var(--primary);
 }
 
+.section__primary {
+  background-color: var(--primary);
+}
+.section__green {
+  background-color: var(--primary-green);
+}
 .container__all {
   max-width: 130rem !important;
   padding: 0 4rem;

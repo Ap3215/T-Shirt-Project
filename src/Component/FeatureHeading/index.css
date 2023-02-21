@@ -32,3 +32,9 @@
 .feature__smallfont {
   font-size: 1.4rem;
 }
+.feature__biggerfont {
+  font-size: 4.4rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--font);
+}
