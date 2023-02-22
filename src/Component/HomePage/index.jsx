@@ -18,6 +18,7 @@ import Action from "../Action";
 import OurPartner from "../OurPartner";
 
 import "./index.css";
+import SendMessage from "../SendMessage";
 
 const CardItems = [
   {
@@ -140,7 +141,7 @@ const HomePage = () => {
         <About heading="our shop" display="flex" text="ourshop" />
       </Section>
 
-      <Section width="all">
+      <Section width="all" background="primary">
         {ShopCard.map((shop, index) => (
           <ShopCards
             key={index}
@@ -152,7 +153,7 @@ const HomePage = () => {
         ))}
       </Section>
 
-      <Section width="all">
+      <Section width="all" background="primary">
         <FeatureHeading
           feature="Our Team"
           heading="black"
@@ -174,8 +175,21 @@ const HomePage = () => {
         />
         <Action />
       </Section>
-      <Section width="all">
+
+      <Section width="all" background="primary">
         <OurPartner />
+      </Section>
+
+      <Section width="all" background="primary">
+        <FeatureHeading
+          feature="send message"
+          heading="black"
+          font="bigfont"
+          border="bordernon"
+          margin="marginnon"
+          align="aligncenter"
+        />
+        <SendMessage />
       </Section>
     </>
   );
