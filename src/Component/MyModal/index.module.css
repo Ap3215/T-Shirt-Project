@@ -1,0 +1,7 @@
+.modal {
+  max-width: 80rem;
+  margin: auto;
+  top: 20%;
+  padding: 0 2rem;
+  background-color: var(--lightgray);
+}
