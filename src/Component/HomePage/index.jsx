@@ -15,6 +15,7 @@ import ProfessionalCards from "../ProfessionalCards";
 import ShopCards from "../ShopCards";
 import TeamCard from "../TeamCard";
 import Action from "../Action";
+import OurPartner from "../OurPartner";
 
 import "./index.css";
 
@@ -172,6 +173,9 @@ const HomePage = () => {
           border="bordernon"
         />
         <Action />
+      </Section>
+      <Section width="all">
+        <OurPartner />
       </Section>
     </>
   );
