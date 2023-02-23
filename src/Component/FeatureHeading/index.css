@@ -27,14 +27,25 @@
 
 .feature__bigfont {
   font-size: 2rem;
+  font-family: var(--font);
+}
+
+.feature__alignleft {
+  text-align: left;
+  font-weight: 400;
+}
+.feature__aligncenter {
+  text-align: center;
 }
 
 .feature__smallfont {
   font-size: 1.4rem;
+  font-family: var(--font);
 }
 .feature__biggerfont {
   font-size: 4.4rem;
   text-align: center;
   font-weight: 400;
   font-family: var(--font);
+  text-transform: none;
 }

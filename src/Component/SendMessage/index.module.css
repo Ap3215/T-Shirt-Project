@@ -1,0 +1,49 @@
+.message {
+  max-width: 70rem !important;
+  margin: 2rem auto;
+
+  background-color: var(--primary-green);
+  padding: 4rem;
+  border-radius: 4rem;
+}
+
+.message__name--error {
+  color: red;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  text-transform: capitalize;
+}
+.message__site {
+  margin: 0 2rem;
+}
+
+.message__site input {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.message__textarea {
+  margin: 0 2rem;
+}
+.message__textarea textarea {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.message__button {
+  margin: 0 2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  border: 2px solid var(--black);
+}
