@@ -6,22 +6,7 @@
   padding: 4rem;
   border-radius: 4rem;
 }
-.message__name {
-  margin: 0 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.message__name input {
-  padding: 1rem;
-  width: 50%;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  border: none;
-}
 .message__name--error {
   color: red;
   font-size: 1rem;
@@ -37,7 +22,6 @@
   width: 100%;
   border-radius: 1rem;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
   border: none;
 }
 
@@ -55,8 +39,7 @@
 }
 
 .message__button {
-  margin: 1rem 2rem;
-
+  margin: 0 2rem;
   text-align: center;
   padding: 1rem;
   background-color: var(--white);

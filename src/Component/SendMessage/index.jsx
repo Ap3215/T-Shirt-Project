@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 import { useForm } from "react-hook-form";
 
+import FormInput from "../FormInput";
+import Textarea from "../Textarea";
+
 import classes from "./index.module.css";
 
 const SendMessage = () => {
@@ -33,13 +36,11 @@ const SendMessage = () => {
   return (
     <div className={classes["message"]}>
       <form onSubmit={handleSubmit(submitFormHandler)}>
-        <div className={classes["message__name"]}>
-          <input
+        <div className={classes["message__site"]}>
+          <FormInput
             type="text"
-            name="name"
             placeholder="Name"
-            onChange={onChangeHandler}
-            {...register("name", {
+            register={register("name", {
               required: "This Filed is required",
               minLength: {
                 value: 3,
@@ -54,20 +55,19 @@ const SendMessage = () => {
                 message: "*Number or Special character are not Allowed",
               },
             })}
-            autoComplete="off"
           />
           {errors.name && (
             <small className={classes["message__name--error"]}>
               {errors.name.message}
             </small>
           )}
-
-          <input
+        </div>
+        <div className={classes["message__site"]}>
+          <FormInput
             type="email"
-            name="email"
+            random="number"
             placeholder="Email"
-            onChange={onChangeHandler}
-            {...register("email", {
+            register={register("email", {
               required: "This Filed is required",
               pattern: {
                 value:
@@ -84,12 +84,10 @@ const SendMessage = () => {
         </div>
 
         <div className={classes["message__site"]}>
-          <input
+          <FormInput
             type="text"
-            name="site"
             placeholder="Your Site"
-            onChange={onChangeHandler}
-            {...register("site", {
+            register={register("site", {
               required: "This Filed is required",
               pattern: {
                 value:
@@ -98,6 +96,7 @@ const SendMessage = () => {
               },
             })}
           />
+
           {errors.site && (
             <small className={classes["message__name--error"]}>
               {errors.site.message}
@@ -105,14 +104,10 @@ const SendMessage = () => {
           )}
         </div>
         <div className={classes["message__textarea"]}>
-          <textarea
-            name="message"
-            id=""
-            cols="10"
-            rows="5"
+          <Textarea
+            type="text"
             placeholder="Message"
-            onChange={onChangeHandler}
-            {...register("message", {
+            register={register("message", {
               required: "This Filed is required",
               minLength: {
                 value: 3,
@@ -123,7 +118,7 @@ const SendMessage = () => {
                 message: "*Username not more than 10 character",
               },
             })}
-          ></textarea>
+          />
           {errors.message && (
             <small className={classes["message__name--error"]}>
               {errors.message.message}
