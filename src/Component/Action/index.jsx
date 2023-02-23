@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import { IoLogoYoutube } from "react-icons/io";
-
 import MyModal from "../MyModal";
 
 import classes from "./index.module.css";

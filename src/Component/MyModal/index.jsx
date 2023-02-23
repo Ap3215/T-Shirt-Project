@@ -7,17 +7,17 @@ import classes from "./index.module.css";
 const MyModal = ({ closeModal }) => {
   return (
     <>
-      {/* <h1>ksdfjkdfj</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-        consequuntur fuga placeat voluptatem sapiente sint minus, ab est harum?
-        Quibusdam illo dolor culpa, beatae deserunt maxime necessitatibus. Sunt,
-        omnis sint!
-      </p>
-      <AiFillCloseCircle onClick={closeModal}></AiFillCloseCircle> */}
       <div className={classes["modal"]}>
-        <Link to="https://www.youtube.com/watch?v=PivzLLqDZac"></Link>
-        <AiFillCloseCircle onClick={closeModal}></AiFillCloseCircle>
+        <video className={classes["modal__video"]}>
+          <source
+            src="/video/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-medium.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <AiFillCloseCircle
+          className={classes["modal__iconbutton"]}
+          onClick={closeModal}
+        ></AiFillCloseCircle>
       </div>
     </>
   );
