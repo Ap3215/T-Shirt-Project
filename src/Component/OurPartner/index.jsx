@@ -1,6 +1,7 @@
 import React from "react";
 
-import Button from "../Button";
+import Button from "../ui/button";
+import Section from "../ui/section";
 
 import style from "./index.module.css";
 
@@ -27,7 +28,7 @@ const cardData = [
 
 const OurPartner = () => {
   return (
-    <>
+    <Section width="all">
       {cardData.map((card, index) => (
         <div key={index} className={`${style["card"]}`}>
           <div className={style["card__image"]}>
@@ -45,8 +46,7 @@ const OurPartner = () => {
           </div>
         </div>
       ))}
-    </>
+    </Section>
   );
 };
-
 export default OurPartner;

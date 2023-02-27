@@ -1,7 +1,7 @@
 import React from "react";
 
-import Button from "../Button";
-import IconButton from "../IconButton";
+import Button from "../button";
+import IconButton from "../iconbutton";
 
 import "./index.css";
 

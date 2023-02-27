@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+
 import { AiFillCloseCircle } from "react-icons/ai";
 
 import classes from "./index.module.css";

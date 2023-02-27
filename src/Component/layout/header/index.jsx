@@ -1,9 +1,9 @@
 import React from "react";
 
-import Logo from "../Logo/index";
-import HeaderLinks from "../HeaderLinks";
-import IconButton from "../IconButton";
-import SocialHandler from "../SocialHandler";
+import Logo from "../../ui/logo/index";
+import HeaderLinks from "../../ui/headerlinks";
+import IconButton from "../../ui/iconbutton";
+import SocialHandler from "../../ui/socialhandler";
 
 import "./index.css";
 

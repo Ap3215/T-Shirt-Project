@@ -1,7 +1,7 @@
 import React from "react";
 
-import HeroHeading from "../HeroHeading";
-import Button from "../Button";
+import HeroHeading from "../heroheading";
+import Button from "../button";
 
 import "./index.css";
 

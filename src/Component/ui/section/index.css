@@ -17,7 +17,7 @@
 
 .container__about {
   max-width: 90rem !important;
-  margin: 0 6rem;
+  margin: 0 auto;
   padding: 0 6rem !important;
 }
 

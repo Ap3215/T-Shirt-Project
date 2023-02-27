@@ -1,6 +1,8 @@
 import React from "react";
 
-import IconButton from "../IconButton";
+import IconButton from "../ui/iconbutton";
+import Section from "../ui/section";
+import FeatureHeading from "../ui/featureheading";
 
 import classes from "./index.module.css";
 
@@ -27,7 +29,17 @@ const teamCards = [
 
 const TeamCard = () => {
   return (
-    <>
+    <Section width="all">
+      <FeatureHeading
+        feature="Our Team"
+        heading="black"
+        font="bigfont"
+        border="bordernon"
+        margin="marginnon"
+      />
+      <p className={classes["teams"]}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
       {teamCards.map((card, index) => (
         <div key={index} className={`${classes["card"]}`}>
           <img
@@ -46,7 +58,7 @@ const TeamCard = () => {
           </div>
         </div>
       ))}
-    </>
+    </Section>
   );
 };
 

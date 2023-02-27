@@ -1,10 +1,12 @@
 import React from "react";
 
+import Section from "../section";
+
 import "./index.css";
 
 const About = ({ display, heading, text }) => {
   return (
-    <>
+    <Section background="primary" color="primary" width="about">
       <div className={`about_${display}`}>
         <h4 className="about_heading">{heading}</h4>
         <p className={`text__${text}`}>
@@ -14,7 +16,7 @@ const About = ({ display, heading, text }) => {
           excepturi.
         </p>
       </div>
-    </>
+    </Section>
   );
 };
 
