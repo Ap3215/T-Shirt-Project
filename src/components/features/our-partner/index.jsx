@@ -2,9 +2,10 @@ import React from "react";
 
 import Button from "../../ui/button";
 import Section from "../../ui/section";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const cardData = [
   {

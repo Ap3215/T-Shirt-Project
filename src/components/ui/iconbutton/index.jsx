@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { FaAngleRight } from "react-icons/fa";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const IconButton = ({ name, card }) => {
   return (

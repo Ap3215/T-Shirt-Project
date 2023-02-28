@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 import { IoLogoYoutube } from "react-icons/io";
-import { attachClasses } from "../../../utils/index";
 import Section from "../../ui/section";
 import FeatureHeading from "../../ui/feature-heading";
 import MyModal from "../../modals/video";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const Action = () => {
   const [showModal, setShowModal] = useState(false);

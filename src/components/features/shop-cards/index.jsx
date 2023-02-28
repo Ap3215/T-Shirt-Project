@@ -2,9 +2,10 @@ import React from "react";
 
 import Section from "../../ui/section";
 import IconButton from "../../ui/iconbutton";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const shopCards = [
   {

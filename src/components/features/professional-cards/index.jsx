@@ -4,9 +4,10 @@ import Card from "react-bootstrap/Card";
 
 import Section from "../../ui/section";
 import FeatureHeading from "../../ui/feature-heading";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const professionalCardItems = [
   {

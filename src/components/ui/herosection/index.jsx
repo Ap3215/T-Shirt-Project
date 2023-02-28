@@ -2,9 +2,10 @@ import React from "react";
 
 import HeroHeading from "../heroheading";
 import Button from "../button";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const HeroSection = () => {
   return (

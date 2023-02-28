@@ -1,8 +1,8 @@
 import React from "react";
 
-import { attachClasses } from "../../../utils/index";
-
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const Section = ({ children, color, width, background }) => {
   return (

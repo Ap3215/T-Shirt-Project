@@ -2,9 +2,10 @@ import React from "react";
 
 import Button from "../button";
 import IconButton from "../iconbutton";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
+
+import { attachClasses } from "../../../utils";
 
 const WorksCard = () => {
   return (

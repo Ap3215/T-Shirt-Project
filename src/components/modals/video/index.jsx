@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 import { AiFillCloseCircle } from "react-icons/ai";
-import { attachClasses } from "../../../utils/index";
 
 import classes from "./index.module.css";
 
@@ -14,8 +13,8 @@ const MyModal = ({ closeModal }) => {
   }, []);
   return (
     <>
-      <div className={attachClasses(classes["modal"])}></div>
-      <div className={attachClasses(classes["modal__container"])}>
+      <div className={classes["modal"]}></div>
+      <div className={classes["modal__container"]}>
         <video controls>
           <source
             src="/video/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-medium.mp4"
@@ -23,7 +22,7 @@ const MyModal = ({ closeModal }) => {
           />
         </video>
         <AiFillCloseCircle
-          className={attachClasses(classes["modal__iconbutton"])}
+          className={classes["modal__iconbutton"]}
           onClick={closeModal}
         ></AiFillCloseCircle>
       </div>
