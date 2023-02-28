@@ -1,0 +1,43 @@
+.feature__heading {
+  padding-top: 1.2rem;
+  font-family: var(--font);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.feature--bordertop {
+  border-top: 1px solid var(--gray);
+}
+.feature--bordernon {
+  border-top: none;
+}
+
+.feature--marginbottom {
+  margin-bottom: 3.2rem;
+}
+.fearture--marginnon {
+  margin-bottom: none;
+}
+
+.title--white {
+  color: var(--white);
+}
+.title--black {
+  color: var(--black);
+}
+
+.feature--bigfont {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature--smallfont {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.feature--biggerfont {
+  font-size: 4.4rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--font);
+  margin-bottom: 2rem;
+}
